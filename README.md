@@ -2,6 +2,7 @@
 WPF研究<br/>
 MainWindow：表格虚拟化测试<br/>
 Window3：TextBoxHelper测试<br/>
+WindowTestControl：自定义控件测试<br/>
 
 其他参考资料搬运：<br/>
 详谈WPF开发中的数据虚拟化：http://t.zoukankan.com/h20064528-p-2706317.html<br/>
