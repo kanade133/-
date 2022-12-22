@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApplication4.WinPopup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication4"
+        mc:Ignorable="d"
+        Title="WinPopup" Height="300" Width="300">
+    <Grid>
+        <DataGrid x:Name="dg" AutoGenerateColumns="False" IsReadOnly="True" MouseLeftButtonUp="dg_MouseLeftButtonUp">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Path=Id}" Width="*"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" Width="*"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="模拟菜单"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <Popup x:Name="popup" Placement="Mouse" StaysOpen="True" Opened="popup_Opened">
+            <Border x:Name="border" BorderThickness="1" BorderBrush="Gray" Background="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="图标-外参列表" Margin="5"/>
+                    </StackPanel>
+                    <DataGrid Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" Width="300" Margin="5"
+                              ItemsSource="{Binding Path=DataContext, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType={x:Type Popup}}}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding Path=Id}" Width="*"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" Width="*"/>
+                        </DataGrid.Columns>
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="模拟菜单"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                </Grid>
+            </Border>
+        </Popup>
+    </Grid>
+</Window>

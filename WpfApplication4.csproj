@@ -57,16 +57,21 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BooleanBoxes.cs" />
+    <Compile Include="ControlExtenion.cs" />
     <Compile Include="PasswordBoxBindingBehavior.cs" />
     <Compile Include="TextBoxHelper.cs" />
     <Compile Include="UCSearchBox.xaml.cs">
       <DependentUpon>UCSearchBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UITools.cs" />
     <Compile Include="Window3.xaml.cs">
       <DependentUpon>Window3.xaml</DependentUpon>
     </Compile>
     <Compile Include="WindowTestControl.xaml.cs">
       <DependentUpon>WindowTestControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WinPopup.xaml.cs">
+      <DependentUpon>WinPopup.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowTestControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
