@@ -57,30 +57,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BooleanBoxes.cs" />
-    <Compile Include="ControlExtenion.cs" />
-    <Compile Include="ImageButton.xaml.cs">
+    <Compile Include="Utils\BooleanBoxes.cs" />
+    <Compile Include="Utils\ControlExtenion.cs" />
+    <Compile Include="Utils\ControlHelper.cs" />
+    <Compile Include="UserContorl\ImageButton.xaml.cs">
       <DependentUpon>ImageButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PasswordBoxBindingBehavior.cs" />
-    <Compile Include="TextBoxHelper.cs" />
-    <Compile Include="UCSearchBox.xaml.cs">
+    <Compile Include="Utils\PasswordBoxBindingBehavior.cs" />
+    <Compile Include="Utils\TextBoxHelper.cs" />
+    <Compile Include="TestWindow\TextBoxLostFocusTest.xaml.cs">
+      <DependentUpon>TextBoxLostFocusTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\UCSearchBox.xaml.cs">
       <DependentUpon>UCSearchBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UITools.cs" />
-    <Compile Include="TestBoxTest.xaml.cs">
+    <Compile Include="Utils\UITools.cs" />
+    <Compile Include="TestWindow\TestBoxTest.xaml.cs">
       <DependentUpon>TestBoxTest.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\TestModel.cs" />
     <Compile Include="ViewModel\TestViewModel.cs" />
-    <Compile Include="WindowTestControl.xaml.cs">
+    <Compile Include="TestWindow\WindowTestControl.xaml.cs">
       <DependentUpon>WindowTestControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WinPopup.xaml.cs">
+    <Compile Include="TestWindow\WinImageTest.xaml.cs">
+      <DependentUpon>WinImageTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestWindow\WinPopup.xaml.cs">
       <DependentUpon>WinPopup.xaml</DependentUpon>
     </Compile>
-    <Page Include="DataGridVisualTest.xaml">
+    <Page Include="TestWindow\DataGridVisualTest.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -88,31 +95,39 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataGridVisualTest.xaml.cs">
+    <Compile Include="TestWindow\DataGridVisualTest.xaml.cs">
       <DependentUpon>DataGridVisualTest.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ImageButton.xaml">
+    <Page Include="UserContorl\ImageButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TextBox.xaml">
+    <Page Include="UserContorl\TextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCSearchBox.xaml">
+    <Page Include="TestWindow\TextBoxLostFocusTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Utils\UCSearchBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TestBoxTest.xaml">
+    <Page Include="TestWindow\TestBoxTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowTestControl.xaml">
+    <Page Include="TestWindow\WindowTestControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WinPopup.xaml">
+    <Page Include="TestWindow\WinImageTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TestWindow\WinPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,7 +160,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="download.png" />
+    <Resource Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TypeH-Model.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

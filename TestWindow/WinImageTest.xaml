@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.WinImageTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="WinImageTest" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="0" x:Name="image" Height="200" Width="200" Stretch="Uniform">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="200" UriSource="/Resources/TypeH-Model.png"/>
+            </Image.Source>
+        </Image>
+
+        <Image Grid.Column="1" Height="200" Width="200" Stretch="Uniform">
+            <Image.Source>
+                <BitmapImage UriSource="/Resources/TypeH-Model.png"/>
+            </Image.Source>
+        </Image>
+    </Grid>
+</Window>
