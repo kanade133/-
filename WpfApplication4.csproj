@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TestWindow\PrintPDF.xaml.cs">
+      <DependentUpon>PrintPDF.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\BooleanBoxes.cs" />
     <Compile Include="Utils\ControlExtenion.cs" />
     <Compile Include="Utils\ControlHelper.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="TestWindow\WinPopup.xaml.cs">
       <DependentUpon>WinPopup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WaitingDialog.cs" />
     <Page Include="TestWindow\DataGridVisualTest.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -99,6 +103,10 @@
       <DependentUpon>DataGridVisualTest.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TestWindow\PrintPDF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserContorl\ImageButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
