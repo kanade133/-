@@ -7,11 +7,10 @@
         mc:Ignorable="d"
         Title="WindowTestControl" Height="300" Width="300">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
+        <StackPanel>
         <local:UCSearchBox VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Margin="5" Width="120" HintText="输入搜索文本" OnTextCommitted="UCSearchBox_OnTextCommitted"/>
         <TextBox HorizontalAlignment="Center" Grid.Row="1" Margin="5" x:Name="textBox" MinWidth="120" IsReadOnly="True"/>
+        <local:ImageButton Margin="5" Width="80" Height="20" BorderThickness="1" BorderBrush="Gray" Background="LightGray" Text="Download" ImageSource="pack://application:,,,/WpfApplication4;component/download.png"/>
+        </StackPanel>
     </Grid>
 </Window>
