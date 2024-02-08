@@ -71,6 +71,9 @@
     <Compile Include="TestBoxTest.xaml.cs">
       <DependentUpon>TestBoxTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\TestModel.cs" />
+    <Compile Include="ViewModel\TestViewModel.cs" />
     <Compile Include="WindowTestControl.xaml.cs">
       <DependentUpon>WindowTestControl.xaml</DependentUpon>
     </Compile>
