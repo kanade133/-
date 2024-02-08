@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication4", "WpfApplication4.csproj", "{C27EA8E3-F55A-438B-B597-DDD96A7221F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication4", "WpfApplication4\WpfApplication4.csproj", "{C27EA8E3-F55A-438B-B597-DDD96A7221F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinWaitingExe", "WinWaitingExe\WinWaitingExe.csproj", "{55317185-60A6-4BB2-AB94-421EEEF9FC38}"
 EndProject
