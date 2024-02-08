@@ -40,6 +40,8 @@ namespace WpfApplication4
         private void textBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
             textBox.Text = "textBox_LostKeyboardFocus";
+
+            //ControlHelper.TextBox_LostKeyboardFocus(sender, e);
         }
     }
 }
