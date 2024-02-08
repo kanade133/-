@@ -78,6 +78,7 @@
     <Compile Include="TestWindow\TestBoxTest.xaml.cs">
       <DependentUpon>TestBoxTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utils\VisibilityConverter.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\TestModel.cs" />
     <Compile Include="ViewModel\TestViewModel.cs" />
